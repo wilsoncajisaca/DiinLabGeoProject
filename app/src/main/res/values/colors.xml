@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#67a5dc</color>
+    <color name="colorPrimaryDark">#446FB2</color>
+    <color name="colorAccent">#446FB2</color>
+    <color name="colorBlanco">#FFFFFF</color>
+    <color name="colorAzul">#446FB2</color>
+    <color name="colorGris">#F2F2F2</color>
+    <color name="colorGrisMedio">#E6E6E6</color>
+    <color name="colorGrisDark">#161616</color>
+    <color name="dark_gray">#e2dad7d7</color>
+
+    <color name="event_color_event_1">#c159dbe0</color>
+    <color name="event_color_event_3">#b5f57f68</color>
+    <color name="event_color_event_2">#87d288</color>
+    <color name="event_color_event_allday">#f8b552</color>
+
+    <color name="startblue">#02b6e7</color>
+    <color name="endblue">#2c2d3f</color>
+    <color name="rojo">#ef211e</color>
+    <color name="orange">#ff3d00</color>
+    <color name="text_event">#5e6e7f</color>
+    <color name="color_event_people">#f4edbc</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="colorRipple">#A9A9F5</color>
+    <color name="placeHolder">#d4d4d4</color>
+    <color name="view">#cac4c4</color>
+    <color name="textoNeuro">#82aacf</color>
+    <color name="textoFlotanteA_D">#8182aacf</color>
+    <color name="textoCheck">#979797</color>
+
+    <color name="orange_dark">#546E7A</color>
+    <color name="blue_dark">#8E24AA</color>
+    <color name="yellow">#F5A623</color>
+
+</resources>

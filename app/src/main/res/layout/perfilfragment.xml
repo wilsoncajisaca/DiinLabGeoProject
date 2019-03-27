@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGris">
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_toolbar">
+
+        <ImageView
+            android:id="@+id/photoFB"
+            android:layout_weight="1"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:src="@drawable/profile"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txtprofile"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratlight"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBlanco"
+        android:weightSum="2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/places"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtubicacion"
+            android:gravity="center"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cuenca, Ecuador"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_weight="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeStepGranularity="2sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Contactos en total"/>
+
+            <TextView
+                android:id="@+id/txtcontactos"
+                android:layout_weight="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeStepGranularity="2sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/gradient_circle"
+                android:textColor="@color/colorBlanco"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_weight="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeStepGranularity="2sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Eventos en total"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txteventosT"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeStepGranularity="2sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/gradient_circle"
+                android:textColor="@color/colorBlanco"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

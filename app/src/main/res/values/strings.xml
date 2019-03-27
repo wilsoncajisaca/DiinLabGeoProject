@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name" translatable="false">DiiNLabApp</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_agregar_cliente" translatable="false">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general" translatable="false">General</string>
+
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="account_type" translatable="false">com.geoinformatica.wilsoncajisaca.diinlab.account</string>
+
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="provider_authority" translatable="false">com.geoinformatica.wilsoncajisaca.diinlab</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="title_activity_actividades" translatable="false">ActividadesActivity</string>
+
+    <string name="title_activity_menu" translatable="false">menuActivity</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="title_activity_pricipal" translatable="false">pricipalActivity</string>
+
+    <string name="facebook_app_id" translatable="false">267287277303929</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb267287277303929</string>
+
+    <string name="error_login" translatable="false">No se pudo acceder a facebook</string>
+    <string name="cancel_login" translatable="false">Se cancelo la conexion con facebook</string>
+    <string name="campos_incompletos" translatable="false">Verifique que los compos esten correctamente rellenados</string>
+    <string name="pass_no_coinciden" translatable="false">Las contraseñas deben coincidir</string>
+    <string name="datos_incorrectos" translatable="false">Correo y/o contraseña incorrectas</string>
+    <string name="title_activity_scrolling" translatable="false">ScrollingActivity</string>
+
+    <string name="title_activity_maps" translatable="false">Map</string>
+    <string name="title_activity_new_event" translatable="false">NewEventActivity</string>
+
+
+    <!--para el calendario-->
+
+    <string name="material_calendar_monday">L</string>
+    <string name="material_calendar_tuesday">M</string>
+    <string name="material_calendar_wednesday">Mi</string>
+    <string name="material_calendar_thursday">J</string>
+    <string name="material_calendar_friday">V</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">D</string>
+
+    <array name="material_calendar_months_array">
+        <item>ENERO</item>
+        <item>FEBRERO</item>
+        <item>MARZO</item>
+        <item>ABRIL</item>
+        <item>MAYO</item>
+        <item>JUNIO</item>
+        <item>JULIO</item>
+        <item>AGOSTO</item>
+        <item>SEPTIEMBRE</item>
+        <item>OCTUBRE</item>
+        <item>NOVIEMBRE</item>
+        <item>DICIEMBRE</item>
+    </array>
+
+    <string name="material_calendar_today_button">Dzisiaj</string>
+    <string name="material_calendar_positive_button">Wybierz</string>
+    <string name="material_calendar_negative_button">Anuluj</string>
+    <string name="Complete">Completado</string>
+
+</resources>

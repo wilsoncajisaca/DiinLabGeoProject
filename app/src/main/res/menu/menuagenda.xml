@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/new_event"-->
+        <!--android:orderInCategory="1"-->
+        <!--android:icon="@android:drawable/ic_menu_add"-->
+        <!--myapp:showAsAction="always"-->
+        <!--android:title="Nuevo evento"/>-->
+
+    <item android:id="@+id/nuevo"
+        android:icon="@mipmap/ic_nuevo"
+        android:title="Calendario"
+        android:orderInCategory="1"
+        myapp:showAsAction="always"/>
+
+</menu>

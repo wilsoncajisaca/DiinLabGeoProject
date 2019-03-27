@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/shimmer"
+        android:visibility="visible"
+        app:shimmer_auto_start="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shimmer_animation_duration="1200">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/item_calendar"/>
+            <include layout="@layout/item_calendar"/>
+            <include layout="@layout/item_calendar"/>
+            <include layout="@layout/item_calendar"/>
+
+        </LinearLayout>
+
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/Rvagenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/cardview_agenda">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/error_net"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:id="@+id/loading_indicator"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_fileName="network_error.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratlight"
+            android:textSize="25sp"
+            android:text="E R R O R. . ."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Empty"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:id="@+id/empty_lottie"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_fileName="no_eventos.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratlight"
+            android:textSize="25sp"
+            android:text="No se encontraron eventos..."/>
+
+        <Button
+            android:id="@+id/new_event"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear uno"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

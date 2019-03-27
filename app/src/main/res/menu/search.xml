@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        myapp:showAsAction="always"
+        myapp:actionViewClass="android.widget.SearchView"
+        android:title="Search" />
+
+    <item android:id="@+id/sincronizar"
+        android:icon="@mipmap/ic_nuevo"
+        android:orderInCategory="2"
+        myapp:showAsAction="never"
+        android:title="Sincronizar"/>
+
+    <item android:id="@+id/agregar"
+        android:icon="@mipmap/ic_nuevo"
+        android:orderInCategory="3"
+        myapp:showAsAction="never"
+        android:title="Agregar nuevo"/>
+
+</menu>

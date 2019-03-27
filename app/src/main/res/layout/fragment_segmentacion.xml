@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorGris"
+    android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textoNeuro">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Diagnóstico"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="18dp"
+                    android:text="2 de 8"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Neurosegmentación"
+                android:textColor="@color/textoNeuro"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb_ninos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Niños (no sujeto a estudio)"
+                android:textColor="@color/textoCheck"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_jovenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Jóvenes (despues despues de los 18)"
+                android:textColor="@color/textoCheck"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_J_masculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Masculino"
+                    android:enabled="false"
+                    android:textColor="@color/textoCheck"
+                    android:textSize="16sp" />
+                <CheckBox
+                    android:id="@+id/cb_J_femenino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Femenino"
+                    android:enabled="false"
+                    android:textColor="@color/textoCheck"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_adultos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Adultos (despues despues de los 25)"
+                android:textColor="@color/textoCheck"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/A_SuMujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Super mujer"
+                        android:enabled="false"
+                        android:textColor="@color/textoCheck"
+                        android:textSize="16sp" />
+                    <CheckBox
+                        android:id="@+id/A_SuMama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Super mama"
+                        android:enabled="false"
+                        android:textColor="@color/textoCheck"
+                        android:textSize="16sp" />
+                    <CheckBox
+                        android:id="@+id/A_Masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masculino"
+                        android:textColor="@color/textoCheck"
+                        android:enabled="false"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_senior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Senior (despues despues de los 60)"
+                android:textColor="@color/textoCheck"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="23dp"
+                android:src="@drawable/ic_left_chevron" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Deslice"
+                android:textColor="@color/textoFlotanteA_D"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Deslice"
+                android:textColor="@color/textoFlotanteA_D"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_right_chevron" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

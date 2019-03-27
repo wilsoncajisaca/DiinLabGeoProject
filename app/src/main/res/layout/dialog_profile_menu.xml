@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/nombre"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="35dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--linear para contenido de foto, lugar y encargo-->
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/perfil"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/b_sheet_user"/>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_ocupacion"
+                        app:autoSizeTextType="uniform"
+                        app:autoSizeMinTextSize="12sp"
+                        app:autoSizeMaxTextSize="100sp"
+                        app:autoSizeStepGranularity="2sp"
+                        android:layout_margin="8dp"
+                        android:textStyle="italic"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:gravity="center"
+                        android:text="Contacto"
+                        android:textColor="@android:color/white" />
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:foregroundGravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_place"/>
+                        <TextView
+                            android:layout_margin="20dp"
+                            app:autoSizeTextType="uniform"
+                            app:autoSizeMinTextSize="10sp"
+                            app:autoSizeMaxTextSize="50sp"
+                            app:autoSizeStepGranularity="5sp"
+                            android:id="@+id/user_place"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="35sp"
+                            android:text="Paute, Ecuador"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Cierro linear para foto, lugar y encargo-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <!--Campos de correo y otros-->
+    <ScrollView
+        android:background="@"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Correo"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_email"/>
+                <TextView
+                    android:id="@+id/correo"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view"/>
+            <!--Cierre de Campos de correo y otros-->
+
+            <!--Campos de Telefono y otros-->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <LinearLayout
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeStepGranularity="2sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_smartphone"/>
+                <TextView
+                    android:id="@+id/telefono"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view"/>
+
+            <!--Abre la interfaz de whatsapp-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Whatsapp"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_whatsapp"/>
+                <TextView
+                    android:id="@+id/whatsapp"
+
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:text="Abrir en whatsapp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

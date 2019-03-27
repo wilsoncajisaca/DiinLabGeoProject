@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/contactos"
+        android:icon="@mipmap/ic_contactosmenu"
+        android:title="Contactos" />
+
+    <item
+        android:id="@+id/agenda"
+        android:icon="@mipmap/ic_agendamenu"
+        android:title="Agenda" />
+
+    <item
+        android:id="@+id/perfil"
+        android:icon="@mipmap/ic_perfilmenu"
+        android:title="Perfil" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@mipmap/ic_idea"
+        android:title="Neurociencia" />
+    <item
+        android:id="@+id/ads"
+        android:icon="@mipmap/ic_ventas"
+        android:title="Ventas" />
+
+</menu>

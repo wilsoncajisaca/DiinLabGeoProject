@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/colorGris"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo Electronico"/>
+
+            <EditText
+                android:id="@+id/email_register"
+                style="@style/editText_style"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección"/>
+
+            <EditText
+                android:id="@+id/location_register"
+                style="@style/editText_style"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"/>
+
+            <EditText
+                android:id="@+id/pass_register"
+                style="@style/editText_style"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduzca nuevamente la contraseña"/>
+
+            <EditText
+                android:id="@+id/re_pass_register"
+                style="@style/editText_style"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="1"
+                />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrarse"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O REGISTRATE CON..."/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:src="@drawable/ic_facebook"
+                    android:id="@+id/register_facebook"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:text="Facebook"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/irLogin"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Session"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

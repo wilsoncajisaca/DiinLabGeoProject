@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_tag" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="TITULO"
+            android:fontFamily="@font/montserratlight"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_calendar"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="Desde: "/>
+
+                        <LinearLayout
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtfechaD"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/agenda"
+                                android:textStyle="bold"
+                                android:gravity="end"
+                                android:fontFamily="@font/montserratlight"
+                                android:paddingLeft="10dp"
+                                android:textColor="#7f7f7f"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_calendar"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="Hasta: "/>
+
+                        <LinearLayout
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/txtfechaH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/agenda"
+                                android:fontFamily="@font/montserratlight"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:gravity="end"
+                                android:textColor="#7f7f7f"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_guest"/>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/carga_invitados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cargando invitados"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+                        <ProgressBar
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llinvitados"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMensaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/agenda"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="4dp"
+                            android:text="Invitados"
+                            android:textSize="18sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RVinvited"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/user_invited"/>
+
+                        <TextView
+                            android:id="@+id/invitados"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/agenda"
+                            android:gravity="center_vertical"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="4dp"
+                            android:textColor="#7f7f7f"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_lugar_evento"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/agenda"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Cuenca, Ecuador"
+                        android:textColor="#7f7f7f"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgDescription"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@android:drawable/ic_menu_agenda"/>
+
+                    <TextView
+                        android:layout_weight="4"
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserratlight"
+                        android:padding="10dp"
+                        android:text="Descripcion del evento"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_map"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapa"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:visibility="gone"
+                    app:cardElevation="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="37dp"
+                            android:text="¿Asistiras?"
+                            android:textSize="20sp"/>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:id="@+id/radiogroup"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="right"
+                            android:padding="10dp">
+
+                            <RadioButton
+                                android:id="@+id/rbtSI"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rbtn_selector"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:text="Si"
+                                android:textSize="20sp"
+                                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                            <RadioButton
+                                android:id="@+id/rbtNO"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rbtn_selector"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="No"
+                                android:textSize="20sp"
+                                android:textColor="@drawable/rbtn_textcolor_selector" />
+                            <RadioButton
+                                android:id="@+id/rbtTALVES"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rbtn_selector"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="Talves"
+                                android:textSize="20sp"
+                                android:textColor="@drawable/rbtn_textcolor_selector" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
